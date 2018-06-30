@@ -1,14 +1,6 @@
-![CF](https://camo.githubusercontent.com/70edab54bba80edb7493cad3135e9606781cbb6b/687474703a2f2f692e696d6775722e636f6d2f377635415363382e706e67) 16: Basic Auth
+[![Build Status](https://travis-ci.com/Confalone/16-basic-authentication.svg?branch=master)](https://travis-ci.com/Confalone/16-basic-authentication)
+# 16: Basic Auth
 ===
-
-## Submission Instructions
-  * Follow the lab submission instructions in the reference folder 
-
-## Learning Objectives  
-* students will be able to create basic authorization middleware
-* students will be able to test basic authorization for signup/signin routes
-
-## Requirements
 
 ## Feature Tasks
 
