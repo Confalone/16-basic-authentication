@@ -20,6 +20,7 @@ userSchema.pre('save', function(next) {
 });
 
 userSchema.statics.authenticate = function(auth) {
+  console.log('authenticate, !!!!!! look at me');
   let query = {username:auth.username};
   return this.findOne(query)
     .then(user => user && user.comparePassword(auth.password))

@@ -1,8 +1,11 @@
 'use strict';
 
+jest.mock('../src/auth/model.js');
+
 const superagent = require('superagent');
 const mongoose = require('mongoose');
 const app = require('../src/app');
+
 
 describe('Authentication Server', () => {
 
@@ -39,13 +42,13 @@ describe('Authentication Server', () => {
       });
   });
 
-  // it('gets a 200 on a good login', () => {
-  //   return superagent.get('http://localhost:8888/signin')
-  //     .auth('john','foo')
-  //     .then(response => {
-  //       expect(response.statusCode).toEqual(200);
-  //     })
-  //     .catch(console.err);
-  // });
+  it('gets a 200 on a good login', () => {
+    return superagent.get('http://localhost:8888/signin')
+      .auth('john','foo')
+      .then(response => {
+        expect(response.statusCode).toEqual(200);
+      })
+      .catch(console.err);
+  });
 
 });
