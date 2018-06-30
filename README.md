@@ -1,20 +1,11 @@
 [![Build Status](https://travis-ci.com/Confalone/16-basic-authentication.svg?branch=master)](https://travis-ci.com/Confalone/16-basic-authentication)
 # 16: Basic Auth
-===
 
-## Feature Tasks
-
-* create an HTTP server using `express`
-* using `mongoose`, create a **User** model with the following properties and options:
-  * `username` - *required and unique*
-  * `email` - *required and unique*
-  * `password` - *required - this must be hashed and can not stored as plain text*
-* use the **npm** `debug` module to log function calls that are used within your application
-* use the **express** `Router` to create a custom router for allowing users to **sign up** and **sign in**
-* use the **npm** `dotenv` module to house the following environment variables:
-  * `PORT`
-  * `MONGODB_URI`
-  * `APP_SECRET` *(used for signing and verify tokens)*
+## Model
+ * properties
+  * `username`: required and unique;
+  * `email`: required and unique;
+  * `password`: required;
 
 ## Server Endpoints
 ### `/api/signup`
@@ -39,3 +30,10 @@
 * `/api/signin`
 * `GET` - test **401**, if the user could not be authenticated
 * `GET` - test **200**, responds with token for a request with a valid basic authorization header
+
+
+* link to travis build: https://travis-ci.com/Confalone/16-basic-authentication
+* link to heroku build: https://basicauthentication16.herokuapp.com/
+
+# License
+ * MIT © Tyler Confalone
