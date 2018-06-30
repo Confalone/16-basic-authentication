@@ -17,7 +17,7 @@ const teamSchema = Schema({
   },
   players: [{
     type: Schema.Types.ObjectId, 
-    ref: 'players',
+    ref: 'team',
   }],
 });
 

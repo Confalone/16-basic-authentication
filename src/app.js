@@ -5,6 +5,7 @@ import morgan from 'morgan';
 import cors from 'cors';
 
 import authRouter from './auth/router.js';
+import sportsRouter from './sports/sports.router.js';
 
 import errorHandler from './middleware/error.js';
 import notFound from './middleware/404.js';
@@ -17,6 +18,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true})); 
 
 app.use(authRouter);
+app.use(sportsRouter);
 
 app.use(notFound);
 app.use(errorHandler);
